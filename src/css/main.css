@@ -1,6 +1,187 @@
+/*ESTILOS GENERALES*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+body {
+  font: 100% /1.5 Arial, sans-serif;
+}
+
+.contenedor {
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*ESTILOS PARA ENCABEZADO*/
+
+header.encabezado {
+  padding: 1.75em 0;
+}
+
+.logo {
+  display: block;
+  float: left;
+  width: 19.90%; /*229-1150*/
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.barra-encabezado {
+  float: right;
+  margin-top: 0.9375em; /*15-16*/
+}
+
+
+.barra-encabezado .telefono {
+  display: inline-block;
+  color: #a49c8f;
+  font-size: 1.25em;
+  /*20-16*/
+  text-decoration: none;
+  cursor: default;
+}
+
+.barra-encabezado .telefono .fa-phone {
+  display: inline-block;
+  font-size: 1.8em;
+  /*35-20*/
+  vertical-align: middle;
+  padding-right: 0.1em;
+  /*2-20*/
+}
+
+.barra-encabezado form {
+  display: inline-block;
+  margin: 0 2.5em;
+}
+
+.barra-encabezado form input {
+  background: #f2f2f1;
+  padding: 0.625em;
+  /*12-16*/
+  color: #a49c8f;
+  border-radius: 0.3125em;
+  border: 0.0625em solid #dedede; /*1-16*/
+  /**/
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 0.3125em;
+  -ms-border-radius: 0.3125em;
+  -o-border-radius: 0.3125em;
+  -webkit-border-radius: 0.3125em;
+}
+
+.barra-encabezado form input:hover,
+.barra-encabezado form input:focus {
+  background: #eaeaea;
+  padding: 0.625em;
+  /*12-16*/
+  color: #a49c8f;
+  border: 0.0625em solid #ed8d21;
+  outline: none;
+}
+
+.barra-encabezado .redes-sociales {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.barra-encabezado .redes-sociales li {
+  display: inline-block;
+}
+
+.barra-encabezado .redes-sociales li a {
+  text-decoration: none;
+  color: white;
+  background: #f1af44;
+  display: block;
+  width: 2.25em;
+  height: 2.25em;
+  text-align: center;
+  line-height: 2.25em;
+  transition: all 0.5s ease;
+  aborder-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.barra-encabezado .redes-sociales li a:hover {
+  background: #a49c8f;
+}
+
+/*ESTILOS PARA MENU PRINCIPAL*/
+
+nav.menu-principal {
+  background: #ee5624;
+}
+
+nav.menu-principal ul {
+  margin: 0;
+  padding: 0;
+  display: table;
+  width: 100%;
+}
+
+nav.menu-principal ul li {
+  display: table-cell;
+}
+
+nav.menu-principal ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.125em; /*18-16*/
+  padding: 1.25em; /*20-16*/
+  border-left: 0.0625em solid #ff7041; /*1-16*/
+  border-right: 0.0625em solid #cf3705; /*1-16*/
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+nav.menu-principal ul li:first-child a {
+  border-left: none;
+}
+
+nav.menu-principal ul li:first-child a {
+  border-right: none;
+}
+
+nav.menu-principal ul li a:hover {
+  background: rgb(249,132,93);
+}
+
+/*ESTILOS PARA LA PRESENTACION*/
+
+section.presentacion {
+  background: url("../img/fondo-presentacion.jpg") center top;
+}
+
+section.presentacion .texto-presentacion{
+  float:left;
+  widows: 53.21739130434783%;
+  border: 1px solid red;
+}
+
+section.presentacion .images-presentacion{
+  float:right;
+  widows: 43.91304347826087%;
+  border: 1px solid red;
 }
