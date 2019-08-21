@@ -1,3 +1,17 @@
+/*Carga de Fuentes*/
+@font-face {
+	font-family:'MiHelvetica';
+	src: url('../fonts/HelveticaLT-Condensed-Black_gdi.eot');
+	src: url('../fonts/HelveticaLT-Condensed-Black_gdi.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/HelveticaLT-Condensed-Black_gdi.woff') format('woff'),
+	url('../fonts/HelveticaLT-Condensed-Black_gdi.ttf') format('truetype'),
+	url('../fonts/HelveticaLT-Condensed-Black_gdi.svg#HelveticaLT-Condensed-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+
 /*ESTILOS GENERALES*/
 *,
 *:before,
@@ -11,10 +25,11 @@ body {
   font: 100% /1.5 Arial, sans-serif;
 }
 
-.contenedor {
-  overflow: hidden;
-  width: 90%;
-  margin: 0 auto;
+.contenedor{
+	display: table;
+	clear: both;
+	width: 90%;
+	margin: 0 auto;
 }
 
 /*ESTILOS PARA ENCABEZADO*/
@@ -175,13 +190,112 @@ section.presentacion {
 }
 
 section.presentacion .texto-presentacion{
-  float:left;
-  widows: 53.21739130434783%;
-  border: 1px solid red;
+	float: left;
+	width: 53.21739130434783%;
+	text-align: center;
 }
 
-section.presentacion .images-presentacion{
-  float:right;
-  widows: 43.91304347826087%;
-  border: 1px solid red;
+section.presentacion .texto-presentacion h1{
+	font-family: 'MiHelvetica';
+	color: white;
+	text-shadow: 1px 1px 0 rgb(56, 55, 55);
+	font-size: 3.75em; /*60-16*/
+	letter-spacing: 2px;
+	margin: 1.466666666666667em 0 0 0;/*88-60*/
+	line-height: 1.1;
 }
+section.presentacion .texto-presentacion h2{
+	font-family: 'MiHelvetica';
+	color: white;
+	text-shadow: 1px 1px 0 rgb(56, 55, 55);
+	font-size: 1.5em; /*24-16*/
+	margin:0;
+	line-height: 1.1;
+}
+section.presentacion .texto-presentacion .boton-principal{
+	display: inline-block;
+	color: white;
+	
+	font-size:1.75em; /* 28-16*/
+	padding: 0.7142857142857143em; /*20-28*/
+	border: 0.25em solid rgba(255, 255, 255, 0.42);/*5-20*/
+	border-radius: 0.2857142857142857em; /*8-28*/
+	background-color: #ee5624;
+	background-clip: padding-box;
+	text-decoration: none;
+	margin: 0.7142857142857143em 0 0 0; /*20-28*/
+	-webkit-transition:all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+
+}
+section.presentacion .texto-presentacion .boton-principal:hover{
+	border: 0.25em solid rgba(255, 255, 255, 0.87);/*5-20*/
+	background-color: #CA3200;
+}
+
+
+section.presentacion .imagen-presentacion{
+	float: right;
+	width: 43.91304347826087%;
+}
+
+section.presentacion .imagen-presentacion img{
+	position: relative;
+	top:1.25em; /*20-16*/
+}
+
+/*ESTILOS PARA BIENVENIDOS*/
+
+.bienvenidos h2 {
+  font-family: 'MiHelvetica';
+  color: #ee5624;
+  font-size: 3em; /*48-16*/
+  letter-spacing: 2px;
+  margin: 0.583333333333333em 0 0 0; /*28-48*/
+  line-height: 1.1;
+  text-align: center;
+}
+
+.bienvenidos p {
+  font-family: 'MiHelvetica';
+  color: #ea605b;
+  font-size: 1.75em; /*28-16*/
+  letter-spacing: 2px;
+  margin: 0.2857142857142857em 0 0 0; /*8-48*/
+  line-height: 1.1;
+  text-align: center;
+}
+
+.bloque-bienvenidos {
+  display: table;
+  margin:0.3125em 0 0 0; /*5-16*/
+}
+
+.bloque-bienvenidos figure {
+  display: table-cell;
+  text-align: center;
+  padding: 0.9375em; /*15-35*/
+
+}
+
+.bloque-bienvenidos figure a {
+  text-decoration: none;
+  display: block;
+}
+
+.bloque-bienvenidos figure a h3:hover {
+  color: #5a605b;
+}
+
+.bienvenidos h3 {
+  font-family: 'MiHelvetica';
+  color: #ee5624;
+  font-size: 1.5625em; /*25-16*/
+  letter-spacing: 2px;
+  margin: 0.6em 0 0.4em 0; /*15 0 10 0*/
+  line-height: 1.1;
+}
+
+
+
