@@ -603,3 +603,148 @@ footer.piedepagina {
 
 	} /*Fin de mediasqueries*/
 
+/*MEDIA QUERIES PARA 550PX*/
+
+@media screen and (max-width: 34.375em){
+
+	.barra-encabezado .telefono {
+		display: block;
+		cursor: pointer;
+	}
+	.barra-encabezado form {
+		display: block;
+		margin: 0.5em 0;
+
+	}
+	.barra-encabezado .redes-sociales {
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+
+	.barra-encabezado form input {
+		width: 96%;
+		padding:1em;
+	}
+
+
+	.barra-encabezado .telefono {
+		display: block;
+		cursor: pointer;
+		background: rgb(238, 86, 36);
+		color: white;
+		padding: 0.5em;
+		border-radius: 0.3125em;
+		width: 96%;
+		font-size: 1.5em;
+		margin: 0 auto;
+		text-shadow: 1px 1px 0 rgb(150, 44, 9);
+	}
+
+	.barra-encabezado .telefono:hover {
+		background: rgb(240, 173, 21);
+	}
+
+	section.presentacion .texto-presentacion h1 {
+		font-size: 2.3em;
+		margin: 0.1em 0 0 0;
+	}
+
+	} /*Fin de mediasqueries*/
+
+
+/*MEDIA QUERIES PARA 515PX*/
+
+@media screen and (max-width: 32.1875em){
+
+	section.presentacion {
+		background: url("../images/fondo-presentacion-chica.jpg") no-repeat center top;
+	}
+
+	section.presentacion .texto-presentacion h2 {
+
+		display: none;
+	}
+	section.presentacion .texto-presentacion .boton-principal {
+		font-size: 1.1em;
+	}
+
+
+
+	.bloque-bienvenidos figure img {
+		float: none;
+		margin-right:0%;
+	}
+
+
+	.bienvenidos h3 {
+		text-align: center;
+	}
+	.bienvenidos figcaption{
+		text-align: center;
+	}
+
+	} /*Fin de mediasqueries*/
+
+
+/*MEDIA QUERIES PARA 420PX*/
+
+@media screen and (max-width: 26.25em){
+
+	main article.quienes-somos img {
+		float: none;
+		width: 50%;
+		margin: 0 auto;
+		display: block;
+	}
+
+
+	main article.quienes-somos p {
+		float: none;
+		width: 96%;
+		margin: 0;
+	}
+
+	section.presentacion .texto-presentacion .boton-principal {
+		font-size: 0.8em;
+		margin-bottom: 0.6em;
+	}
+
+	} /*Fin de mediasqueries*/
+
+
+
+
+
+/*MEDIA QUERIES PARA 1800PX*/
+
+@media screen and (min-width: 112.5em){
+	body{
+		font-size: 125%;/*20px*/
+	}
+
+
+	section.presentacion .texto-presentacion .boton-principal {
+		margin: 0.714286em 0 1em;
+
+	}
+	section.presentacion .images-presentacion img {
+		top: 3.5em;
+
+	}
+
+	}
+
+/*MEDIA QUERIES PARA 2100PX*/
+
+@media screen and (min-width: 131.25em){
+	body{
+		font-size: 162.5%;/*26px*/
+	}
+	.contenedor{
+		max-width:76.92307692307692em; /* 2000-26*/
+
+	}
+
+
+	} /*Fin de mediasqueries*/
